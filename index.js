@@ -24,6 +24,9 @@ bot.command('update', (ctx) => {
         ctx.reply('Bot has been updated successfully"');
     })
 })
+bot.command('help', (ctx) => {
+    ctx.reply('Here are the commands you can use : \n/start - Start the bot\n/help - List available commands\n/update - Update the bot\n/NewOrder - Place a new order\n/getOTP - Fetch OTP from GMX email\n/latestEmail - Fetch latest email from GMX');
+})
 
 bot.command('NewOrder', (ctx) =>{
     const name = ctx.from.first_name || 'Sanjay';
