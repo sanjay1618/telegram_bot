@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build the Docker Image
-        run: docker build -t sanjaydev/telegram-bot:latest .
+        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME}}/telegram-bot:latest .
 
       - name: Push the Docker Image
-        run: docker push sanjaydev/telegram-bot:latest
+        run: docker push ${{ secrets.DOCKER_HUB_USERNAME}}/telegram-bot:latest
