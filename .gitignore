@@ -1,2 +1,4 @@
 #Environment variables like BOT TOKENS
 .env
+node_modules
+.git
